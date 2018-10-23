@@ -53,10 +53,10 @@ def handleQuery(query):
 
 
         if base != 2:
-            add_item(value, 2, "0b", "Binary (base 2)")
+            add_item(value, 2, "", "Binary (base 2)")
 
         if base != 8:
-            add_item(value, 8, "0o", "Octal (base 8)")
+            add_item(value, 8, "", "Octal (base 8)")
 
         if base != 10:
             add_item(value, 10, "", "Decimal (base 10)")
