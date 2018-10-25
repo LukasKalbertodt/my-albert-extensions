@@ -5,11 +5,12 @@ They are all written quick'n'dirty to work for me. But I guess they could be use
 **Extensions**:
 - "BetterBase": can convert between base 2, 8, 10 and 16. It's easier to use than the built-in "Base Converter".
 - "Unicode Search": searches for unicode characters. Triggered with prefix `uni`. Example: `uni dash en`.
+- "WinSwitch": switch between windows by filtering window titles. Triggered by prefix `win`.
 
 
 ## Installation
 
-Put the Python files and all directories with a `__init__.py` file into `~/.local/share/albert/org.albert.extension.python/modules`. Then activate them in the Albert settings.
+Put the Python files in the repository root and all directories with a `__init__.py` file into `~/.local/share/albert/org.albert.extension.python/modules`. Then activate them in the Albert settings.
 
 
 ## Contribution
