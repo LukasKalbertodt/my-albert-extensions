@@ -23,7 +23,7 @@ def handleQuery(query):
 
         # Prepare query string
         input = query.string
-        needles = cgi.escape(input.lower()).split(' ')
+        needles = cgi.escape(input.lower()).strip().split(' ')
 
         # Create display handle
         display = Display()
@@ -68,6 +68,12 @@ def handleQuery(query):
 
                 if not is_ok:
                     continue
+
+                for needle in needles:
+                    start = lowercase_name.find(needle)
+                    end = start + len(needle)
+                    name = name[:start] + "<b>" + name[start:end] + "</b>" + name[end:]
+                    lowercase_name = name.lower()
 
                 # Add the item
                 def activate_win(id):
